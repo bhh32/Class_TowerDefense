@@ -8,12 +8,12 @@ public class Health : MonoBehaviour
 
     void Awake()
     {
-        if (gameObject.name == "Enemy1")
+        if (gameObject.name == "Enemy1(Clone)")
         {
-            hp.health = 10f;
+            hp.health = 50f;
             hp.armor = 0f;
         }
-        else if (gameObject.name == "Enemy2")
+        else if (gameObject.name == "Enemy2(Clone)")
         {
             hp.health = 75f;
             hp.armor = 25f;

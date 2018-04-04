@@ -15,6 +15,7 @@ public class Shoot : MonoBehaviour
     {
         enemiesList = new List<GameObject>();
     }
+
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Enemy"))

@@ -767,9 +767,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00c72fd238b97b54f84a9b8d672e543a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fireRate: 5
+  fireRate: 1
   projectilePrefab: {fileID: 1006603829155138, guid: 754c2d6bd3579ef4d833b7254515db13,
     type: 2}
+  enemiesList: []
 --- !u!114 &114327684464043320
 MonoBehaviour:
   m_ObjectHideFlags: 1

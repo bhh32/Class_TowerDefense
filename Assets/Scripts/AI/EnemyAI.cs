@@ -14,7 +14,16 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] float dist;
     [SerializeField] Rigidbody rb;
 
-	// Use this for initialization
+    void Awake()
+    {
+        wayPoints = new GameObject[5];
+        wayPoints[0] = GameObject.Find("Waypoint");
+        wayPoints[1] = GameObject.Find("Waypoint (1)");
+        wayPoints[2] = GameObject.Find("Waypoint (2)");
+        wayPoints[3] = GameObject.Find("Waypoint (3)");
+        wayPoints[4] = GameObject.Find("Waypoint (4)");
+    }
+
 	void Start () 
     {
         agent.SetDestination(wayPoints[currentWaypointIdx].transform.position);
