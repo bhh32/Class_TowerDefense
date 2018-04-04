@@ -40,6 +40,8 @@ GameObject:
   - component: {fileID: 54493331080774040}
   - component: {fileID: 195763580574687530}
   - component: {fileID: 114508660519500480}
+  - component: {fileID: 114272064535726948}
+  - component: {fileID: 65049335224146094}
   m_Layer: 0
   m_Name: Enemy2
   m_TagString: Enemy
@@ -54,7 +56,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1759890191376302}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: -36.823093, y: 0, z: 101.31135}
+  m_LocalPosition: {x: -38.413094, y: 0, z: 91.75134}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4423924482748652}
@@ -127,11 +129,11 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &65400600909469098
+--- !u!65 &65049335224146094
 BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -143,6 +145,29 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.8436184, y: 1.8636932, z: 6.0361147}
   m_Center: {x: 0.01822108, y: 0.43184662, z: -0.7453618}
+--- !u!65 &65400600909469098
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1759890191376302}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.8436184, y: 1.8636932, z: 6.0361147}
+  m_Center: {x: 0.01822108, y: 0.43184662, z: -0.7453618}
+--- !u!114 &114272064535726948
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1759890191376302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ffdc272b4669324f9f51e0709c13cd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114508660519500480
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -156,7 +181,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agent: {fileID: 195763580574687530}
   wayPoints:
-  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
