@@ -40,9 +40,7 @@ public class Shoot : MonoBehaviour
     {
         foreach (GameObject e in enemiesList)
         {
-            if (e == null)
-            {}
-            else
+            if (e != null)
                 return false;
         }
 
